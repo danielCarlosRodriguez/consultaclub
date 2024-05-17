@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css"
 
 const ClientForm = () => {
   const [option, setOption] = useState("document");
@@ -53,7 +54,7 @@ const ClientForm = () => {
 
   return (
     <div className="d-flex justify-content-center align-items-center vh-100">
-      <div className="w-100" style={{ maxWidth: "40%" }}>
+      <div style={{ maxWidth: "380px", width: "100%" }}>
         <div className="card shadow p-4">
           <form onSubmit={handleSubmit}>
             <div className="form-check">
